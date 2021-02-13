@@ -1,0 +1,108 @@
+nav {
+	background-color: white;
+	border-bottom: .1rem solid black;
+	width: 100vw;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-content: center;
+	top: 0;
+	z-index: 10;
+	position: relative;
+}
+
+.nav-item {
+	width: 100px;
+}
+
+#site-title {
+	font-size: 2rem;
+	position: absolute;
+	right: 40rem;
+	width: 20rem;
+	align-self: center;
+	font-weight: 600;
+	visibility: hidden;
+}
+#burger {
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2rem;
+	left: 1rem;
+	height: fit-content;
+	width: 55%;
+	display: grid;
+	grid-template-rows: repeat(3, 2px);
+	row-gap: 8px;
+	margin-left: .5rem;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+#burger div {
+	background-color: #333;
+	transition: 1s;
+	z-index: 3;
+	width: 3rem;
+	height: .3rem;
+	padding: 0;
+	margin: 0;
+	z-index: 9;
+}
+
+#menu {
+	transition: 1s;
+	position: absolute;
+	right: 200vw;
+	top: 5rem;
+	z-index: 2;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(8, 8, 73, 0.76);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#menu > a {
+	margin-top: 15rem;
+	font-size: 3rem;
+	justify-self: center;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	padding: 1rem;
+}
+
+#menu > a:hover {
+	font-size: 3.5rem;
+}
+
+#searchIcon {
+	width: 4rem;
+}
+#shop-bag {
+	width: 4rem;
+	cursor: pointer;
+}
+
+span {
+	font-size: 2.5rem;
+	top: 0;
+	position: absolute;
+}
+
+@media only screen and (min-width: 800px){
+	#site-title {
+		visibility: visible;
+	}
+	
+	#menu > a {
+		font-size: 3.5rem;
+	}
+
+	#menu > a:hover {
+		font-size: 4rem;
+	}
+}
